@@ -1,0 +1,60 @@
+.menuBar {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.menuBar li {
+    float: left;
+    width: 160px;
+    position: relative;
+}
+
+.menuBar li a {
+    background: #333;
+    color: #fff;
+    display: block;
+    padding: 7px 8px;
+    text-decoration: none;
+    border-top: 1px solid #069;
+}
+
+.menuBar li a:hover {
+    background: #fff;
+    color: #000;
+}
+
+.menuBar ul {
+    display: none;
+    position: absolute;
+    margin-left: 0px;
+    list-style: none;
+    padding: 0px;
+}
+
+.menuBar ul li {
+    width: 160px;
+    float: left;
+}
+
+.menuBar ul a {
+    display: block;
+    height: 15px;
+    padding: 7px 8px;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid #222;
+}
+
+.menuBar ul li a:hover {
+    color: #069;
+}
+
+textarea {
+    width: 95%;
+    height: 95%;
+}
+
+#menu {
+    height: 30px;
+}

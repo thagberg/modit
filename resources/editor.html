@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+
+        <link rel="stylesheet" href="modit.css"/>
+        <link rel="stylesheet" href="css/additional.css"/>
+        <script src="app.js"></script>
+        <script>
+        $( document ).ready(function() {
+            runApp();
+        });
+        </script>
+    </head>
+    <body>
+        <div id="menu">
+            <ul class="menuBar">
+                <li><a href="#" onclick="openFile()">Open File</a></li>
+                <li><a href="#" onclick="saveFile()">Save File</a></li>
+                <li><a href="#" onclick="openPreferences()">Preferences</a></li>>
+            </ul>
+        </div>
+
+        <div id="tabs">
+            <ul class="editorTabs">
+            </ul>
+        </div>
+
+        <div id="editor">
+        </div>
+    </body>
+</html>
