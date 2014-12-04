@@ -45,8 +45,23 @@ function EditorTab(fileId) {
 
     // create tab content
     var fileContent = bufferMapping[fileId].contents;
+    // TEST ONLY: find numbers and change their class for highlighting
+    var r = /\d+/g;
+    var matches = fileContent.match(r);
+    var index = 0;
+    var oldIndex = 0;
+    var newContent = '';
+    for (var i = 0; i < matches.length; i++) {
+        index = fileContent.indexOf(matches[i]);
+        newContent += fileContent.substring(0, index);
+        newContent += '<span class="number">';
+        newContent += matches[i];
+        newContent += '</span>';
+        fileContent = fileContent.substring(index+matches[i].length);
+    }
+    newContent += fileContent;
     var tabContent = $('<div id="content-' + fileId + '"></div');
-    tabContent.append('<textarea>' + fileContent + '</textarea>');
+    tabContent.append('<div contenteditable="true">' + newContent + '</div>');
     $('#tabs').append(tabContent);
     $('#tabs').tabs('refresh');
 

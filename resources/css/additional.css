@@ -1,15 +1,4 @@
 
-body {
-    background: #000000;
-    color: #00FF00;
-    font-size: 150%;
-}
-
-#menu {
-    height: 80px;
-}
-
-textarea {
-    background: #000000;
-    color: #00FF00;
+.number {
+    color: #ff0000; !important
 }
